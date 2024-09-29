@@ -23,6 +23,8 @@ int main() {
 		printf("thread create fail\n");
 	}
 
+	//if(pthread_join(tid, NULL)) {}
+
 	while(1) {
 		printf("mainthread : getpid(%4d), getppid(%4d), gNum(%d)\n",(int)getpid(), (int)getppid(), gNum);
 		sleep(5);
