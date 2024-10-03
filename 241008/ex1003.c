@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+void int_handle(int);
+
 int num = 0;
 
 int main() {
@@ -18,8 +20,7 @@ int main() {
 		printf("i'm sleepy..\n");
 		sleep(1);
 		if(num >= 3) {
-			exit(0);
-		}
+			exit(0);		}
 	}
 }
 
